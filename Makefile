@@ -15,7 +15,7 @@ all :
 .PHONY: clean
 
 ovmf:
-	cd $(EDK2_DIR) && $(MAKE) -C /home/nick/repos/ub/MOS/kernel-dev-tools/edk2/BaseTools/Source/C
+	cd $(EDK2_DIR) && $(MAKE) -C ./BaseTools/Source/C
 	cd $(EDK2_DIR) && bash ./OvmfPkg/build.sh -a X64 -b
 
 %.o : %.asm
